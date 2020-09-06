@@ -92,16 +92,19 @@ const turnoComputadora = (puntosMinimos) => {
         }
     } while ( (puntosComputadora < puntosMinimos) && (puntosMinimos <= 21 ) );
 
-    if ( puntosComputadora === puntosJugador ) {
-        alert ('nadie gana');
-        
-    } else if (puntosJugador > 21) {
-        alert('Computadora Gana');
-    } else if ( puntosComputadora > 21 ){
-        alert ('Jugador gana');
-    } else {
-        alert ('computadora gana');
-    }
+
+    setTimeout(() => {
+        if ( puntosComputadora === puntosJugador ) {
+            alert ('nadie gana');
+            
+        } else if (puntosJugador > 21) {
+            alert('Computadora Gana');
+        } else if ( puntosComputadora > 21 ){
+            alert ('Jugador gana');
+        } else {
+            alert ('computadora gana');
+        }
+    }, 20);
 
 };
 
